@@ -1,0 +1,505 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Raleway, sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+body p{
+    line-height: 1.8;
+}
+img {
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Cabin, sans-serif;
+}
+
+.heading {
+    font-weight: 900;
+    position: relative;
+    display: inline-block;
+    background-color: #fff;
+}
+
+.heading::before {
+    position: absolute;
+    top: -10px;
+    left: -20px;
+    display: inline-block;
+    content: '';
+    width: 40px;
+    height: 55px;
+    border: 3px solid #36255a;
+    background: none;
+    z-index: -2;
+}
+
+.overview-para p {
+    text-align: center;
+}
+
+@media(max-width:424px) {
+    .heading::before {
+        display: none;
+    }
+
+    .overview-para p,
+    .grey-bg p,
+    .grey-bg-2 p,
+    #location p {
+        text-align: justify;
+    }
+    
+}
+
+.footer-sec {
+    background-image: linear-gradient(rgba(116, 116, 116, 0.7), rgba(116, 116, 116, 0.7)), url('images/footer-img.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 40px 0;
+}
+
+/* .footer-content{
+    position: relative;
+} */
+.footer-sec-2 {
+    border-top: 3px solid #36255a;
+}
+
+.nav-text {
+    color: #fff;
+    font-size: 18px;
+    padding-right: 25px !important;
+}
+.tab-c{
+    color: #36255a;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 700px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px;
+}
+.img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+#amenities{
+    overflow-y: hidden;
+}
+
+.toggler-border {
+    border-color: #fff;
+}
+
+.v-design {
+    clip-path: polygon(100% 80%, 50% 100%, 0 80%, 0 0, 100% 0);
+}
+
+.banner-image h1 {
+    font-size: 48px;
+    font-weight: 400;
+    padding: 3px;
+}
+
+.text-overlay img {
+    width: 250px;
+}
+
+.nav-transparent {
+    position: absolute;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+}
+
+.nav-text:hover {
+    color: #d3d4d5;
+}
+
+.whatsapp-sm {
+    display: none;
+}
+
+.fa-whatsapp {
+    font-size: 25px;
+}
+
+
+
+@media(max-width:767px) {
+    body{
+        font-size: 14px;
+    }
+    .navbar {
+        background: #00000078 !important;
+        /* position: relative; */
+    }
+
+    .whatsapp {
+        display: none;
+    }
+
+    .whatsapp-sm {
+        display: block;
+        position: absolute;
+        top: 8px;
+        right: 70px;
+    }
+
+    .fa-whatsapp {
+        font-size: 35px;
+    }
+
+    .contact-mb .pe-5 {
+        padding-right: .5rem !important;
+    }
+
+    .contact-mb .ps-5 {
+        padding-left: .5rem !important;
+    }
+
+    .contact-card {
+        margin-top: 30px !important;
+    }
+
+    .grey-bg {
+        margin-left: 0 !important;
+        padding: 30px !important;
+    }
+
+    #amenities figure {
+        margin-left: 0 !important;
+        margin-bottom: -5px;
+    }
+
+    .padding-0 {
+        padding: 0;
+    }
+
+    .grey-bg-2 {
+        padding: 30px !important;
+    }
+}
+
+.overview-card {
+    background-color: #b1b1b12e;
+    padding: 15px;
+    margin: 5px;
+}
+
+.overview-card p {
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.overview-bold {
+    font-weight: 900;
+}
+
+.overview-card i {
+    font-size: 25px;
+    color: #36255a;
+}
+
+.btn-color {
+    background-color: #36255a;
+    color: #fff;
+    padding: 10px 30px;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-color:hover {
+    background-color: #36255a;
+    transform: scale(1.1);
+    color: #fff;
+}
+
+span.h4 {
+    font-weight: 600;
+}
+
+.logo-box {
+    width: 150px;
+    height: 50px;
+}
+
+.logo-box img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.short-hr::after {
+    display: block;
+    border: 2px solid #36255a;
+    width: 90px;
+    content: '';
+    margin: 0 auto;
+}
+
+.form-input input,
+.form-input textarea {
+    background: none;
+    border: none;
+    border-bottom: 2px solid #36255a;
+    color: #fff;
+    border-radius: 0px;
+}
+.form-input input:focus,
+.form-input textarea:focus{
+    background: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+}
+
+.form-input input:focus,
+.form-input textarea:focus {
+    box-shadow: none;
+}
+
+/* .form-right{
+    float: right;
+} */
+/* .contact-margin{
+    margin-right: 15px;
+} */
+.contact-card figure {
+    border: 2px solid #36255a;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #36255a;
+    position: absolute;
+    top: -55px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.contact-card figure img {
+    padding: 4px;
+    padding-top: 15px;
+}
+
+.contact-card {
+    border: 2px solid #36255a;
+    padding: 6px 35px;
+    position: relative;
+}
+
+.form-floating>.form-control-plaintext~label::after,
+.form-floating>.form-control:focus~label::after,
+.form-floating>.form-control:not(:placeholder-shown)~label::after,
+.form-floating>.form-select~label::after {
+    background: none;
+}
+
+.form-floating label {
+    color: #fff !important;
+}
+
+.contact-card .content {
+    margin-top: 45px;
+}
+
+.err-msg {
+    color: rgb(215, 2, 2);
+    font-size: 15px;
+}
+.tab-pane figure{
+    width: 100px;
+    height: auto;
+    margin: auto;
+}
+.loc-text p{
+    text-align:center !important;
+    padding-top: 10px;
+}
+.loc-text{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width:500px) {
+    .v-design {
+        clip-path: polygon(100% 80%, 50% 93%, 0 80%, 0 0, 100% 0);
+    }
+
+    .banner-mb {
+        padding-bottom: 0 !important;
+        margin-bottom: 0 !important;
+    }
+}
+
+.grey-bg {
+    background-color: #b1b1b12e;
+    /* margin-top: auto;
+    margin-bottom: auto; */
+    margin-left: -60px;
+    padding: 40px 40px 40px 80px;
+    z-index: -1;
+}
+
+#amenities figure {
+    margin-left: 50px;
+    z-index: 1;
+    position: relative;
+}
+
+.grey-bg-2 {
+    background-color: #b1b1b12e;
+    margin-right: -30px;
+    padding: 40px 80px 40px 40px;
+    z-index: -1;
+}
+
+.prpl-clr,
+.modal,
+.form_b input,
+.form_b label,
+.form_b textarea {
+    color: #36255a !important;
+}
+
+/* .modal-backdrop{
+    z-index: -1;
+} */
+.form-floating input,
+.form-floating textarea {
+    padding: 10px !important;
+}
+
+.btn-color_b {
+    background-color: #36255a;
+    color: #fff;
+}
+
+.btn-color_b:hover {
+    background-color: #fff;
+    color: #36255a;
+    border: 1px solid #36255a;
+}
+
+#moreContent {
+    display: none;
+}
+
+#gallery img {
+    padding: 10px 0;
+    width: 100%;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+#gallery img:hover {
+    transform: scale(1.05);
+    transition: transform .5s;
+}
+
+.iti {
+    width: 100%;
+}
+
+.iti--inline-dropdown .iti__dropdown-content {
+    z-index: 99;
+}
+
+.form-control.iti__tel-input {
+    padding-left: 80px !important;
+    padding-top: 28px !important;
+}
+
+.iti__selected-flag {
+    padding-top: 15px !important;
+}
+
+.iti__country-name {
+    color: #333;
+}
+
+#f-form ::placeholder {
+    color: #fff;
+}
+
+.iti__search-input,
+.iti__search-input::placeholder {
+    color: #000 !important;
+}
+.iti__country-list{
+    width: 100%;
+}
+.brchr-space .phone-input{
+    padding-top: 16px !important;
+}
+.brchr-space .iti__selected-flag{
+    padding-top: 0px !important;
+}
+#f-form .err-msg{
+    color: #fff;
+}
+#save-info{
+    padding: 10px 25px;
+    font-size: 23px;
+}
+.amen-icon{
+    width: 56px;
+    height: 56px;
+    padding: 5px;
+}
+@media(min-width:768px) and (max-width:820px) {
+    .nav-text{
+        padding-right: 12px !important;
+    }
+}
+
+.form-floating.pt-3.form-input .error {
+    margin: 25px 0 0 !important;
+}
+
+.contact_msg {
+    text-align: center;
+    margin: 50px 0 0;
+}
+#phone-no::placeholder {
+    color: #fff !important;
+}
